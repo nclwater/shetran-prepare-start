@@ -7,7 +7,7 @@ IMPLICIT NONE
 
 INTEGER(4)                :: res,i,length
 CHARACTER(128), PARAMETER :: exename1='shetran-prepare-2.2.10-sediment.exe'
-CHARACTER(128), PARAMETER :: exename2='shetran-4.4.5.exe'
+CHARACTER(128), PARAMETER :: exename2='shetran-4.4.6.exe'
 CHARACTER(512)            :: filnam, exedir
 CHARACTER(1024)           :: c
 LOGICAL                   :: Lres
