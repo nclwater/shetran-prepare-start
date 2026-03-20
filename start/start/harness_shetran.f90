@@ -105,6 +105,9 @@ WRITE(c,'(A)') TRIM(exename4)//' -f "'//trim(basedir)//'rundata_'//trim(catchmen
 
 res=system(trim(c))
 
-pause
+write(*,*)
+write(*,'(''paused, type [enter] to continue'')')
+read (*,*)
+stop
 
 END PROGRAM harness_shetran
