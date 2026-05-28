@@ -66,7 +66,7 @@ open(10,FILE=xmlfilefull,err=9999,status='old')
 
 goto 9998
 
-9999 write (*,*) 'Error openinig file ',xmlfilefull
+9999 write (*,*) 'Error opening file ',xmlfilefull
 close(10)
 pause
 stop 1
