@@ -40,7 +40,8 @@ code = '-a'  !treat as default filname
 message=''
 SELECT CASE(code)
 CASE ('-a') !use popup
-    ALLFILTERS            = 'All files(*.*)'//CHAR(0)//'*.*'//CHAR(0)//CHAR(0)
+    ALLFILTERS = 'XML files (*.xml)'//CHAR(0)//'*.xml'//CHAR(0)// &
+             'All files (*.*)'//CHAR(0)//'*.*'//CHAR(0)//CHAR(0)
     DLGTITLE              = 'Select a SHETRAN library (xml) file'C
     opn%lStructSize       = SIZEOF(Opn)
     opn%HWNDOWNER         = GETHWNDQQ(QWIN$FRAMEWINDOW)
